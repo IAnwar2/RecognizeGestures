@@ -30,7 +30,7 @@ RecognizeGestures is meant as an accessory to the AutoDoorLock project. The goal
 2. Follow the on-screen instructions to perform gestures.
 
 ## Adding/Alterng Data
-- Run CreateGesture.py to create additional data points for training the model
+- Run CreateGestureData.py to create additional data points for training the model
 
 ## Training the Model
 - Run HandGuesture.ipynb to retrain and save the model with your new parameters
