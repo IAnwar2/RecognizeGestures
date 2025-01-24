@@ -58,13 +58,13 @@ while cap.isOpened():
             keys = pygame.key.get_pressed() #have to press u to register thumbs up, d for thumbs down, and b everything else
 
             if keys[pygame.K_u]:
-                save_landmarks_to_csv(hand_landmarks, "Thumbs Up", "HandModel/thumbs_up_data.csv")
+                save_landmarks_to_csv(hand_landmarks, "Thumbs Up", "Data/thumbs_up_data.csv")
                 cv2.putText(frame, "Thumbs Up", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
             elif keys[pygame.K_d]:
-                save_landmarks_to_csv(hand_landmarks, "Thumbs Down", "HandModel/thumbs_down_data.csv")
+                save_landmarks_to_csv(hand_landmarks, "Thumbs Down", "Data/thumbs_down_data.csv")
                 cv2.putText(frame, "Thumbs Down", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
             elif keys[pygame.K_b]:
-                save_landmarks_to_csv(hand_landmarks, "Blank", "HandModel/blank_data.csv")
+                save_landmarks_to_csv(hand_landmarks, "Blank", "Data/blank_data.csv")
                 cv2.putText(frame, "Blank", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
     cv2.imshow("Hand Gesture Recognition", frame)

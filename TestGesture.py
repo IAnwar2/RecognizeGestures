@@ -17,12 +17,11 @@ hands = mp_hands.Hands(static_image_mode=False,
             min_tracking_confidence=0.5)
 
 # Load model for hand gesture recognition
-model = load_model("hand_gesture_model.keras")
+model = load_model("Model/hand_gesture_model.keras")
 
 process_this_frame = True
 last_prediction_time = 0  # Last time a prediction was made
 prediction_interval = 0.5  # Interval in seconds between predictions
-
 
 while True:
     ret, frame = video_capture.read() # Get a frame
